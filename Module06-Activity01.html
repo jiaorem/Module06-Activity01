@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>Module06-Activity01</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="" ng-init="age=0;sumAge=10;">
+        <h1>Please Enter Your Full Name and Age</h1>
+      <label>First Name:</label>
+      <input type="text" ng-model="firstName" placeholder="Enter your last name">
+      <label>Last Name:</label>
+      <input type="text" ng-model="lastName" placeholder="Enter your first name">
+      <label>Age:</label>
+      <input type="number" ng-model="age" placeholder="Enter your age">
+      <label>Find your age years from now:</label>
+      <input type="number" ng-model="sumAge" placeholder="Years from now">
+      <hr>
+      <h1>Hello {{firstName | lowercase}} {{lastName | uppercase}}!</h1>
+      <h2 ng-bind=" 'You are ' + age + ' years old!'"></h2>
+      <h2>You will be {{age + sumAge}} years old {{sumAge}} years from now!</h2> <br>
+    </div>
+  </body>
+</html>
